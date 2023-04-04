@@ -1,5 +1,4 @@
 const asyncHandler = require('express-async-handler');
-
 const Goal = require('../models/goalModel');
 const User = require('../models/userModel');
 
@@ -80,7 +79,7 @@ const deleteGoal = asyncHandler(async (req,res) => {
         throw new Error('User not authorized');
     }
 
-    await goal.deleteOne({"_id" : req.params.id});
+    await Goal.deleteOne({"_id" : req.params.id});
     
     res.status(200).json({id: req.params.id});
 });
