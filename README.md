@@ -1,5 +1,5 @@
 # Goalsetter MERN app
-
+A goal setter web app using express and mongodb for backend, react and redux for frontend. User registration, authentication, authorization. Users can view, create, update and delete their goals.
 ## Usage
 
 Add these lines to .env and add YOUR_URI
